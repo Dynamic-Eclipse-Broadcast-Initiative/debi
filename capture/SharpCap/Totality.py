@@ -9,7 +9,8 @@ import os
 import time
 
 ### List of variables to be changed by user #########################################
-path = r'C:\DEB\Totality' # path for capture folder
+str_date = time.strftime("%d%b%Y",time.gmtime())
+path = r'C:\DEB\\'+str_date+r'\Totality' # path for main capture folder
 watch_dir = r'C:\temp\watch' # path for watch files, set to None to not bother.
 
 between_set = 0.0 # time between sets of exposures in exposure List (seconds)
