@@ -27,7 +27,7 @@ from typing import Text
 import watchdog.observers
 import watchdog.events
 
-import merge_fits
+from . import merge_fits
 
 loglevel = logging.INFO
 
