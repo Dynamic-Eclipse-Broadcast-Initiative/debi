@@ -16,11 +16,12 @@ Once you've fetched the scripts, you can update them with `git pull`
 
 The target platform is Microsoft Windows.
 
-## Organization
+## File Organization
 
-We don't have much software defined yet.  So the organization is probably wrong.
+We've set this up to produce a python 'package' called 'debi' which should
+be a vehicle for installing things via pip (or maybe conda?).  However,
+this doesn't necessarily provide a good way to get to the sharpcap files.
 
-* capture -- for scripts to assist in capturing images (e.g. SharpCap)
-* analysis -- image processing scripts
-
+These will need to be put somewhere more accessible, through some other
+mechanism. Maybe a customization of the setuptools installation.
 

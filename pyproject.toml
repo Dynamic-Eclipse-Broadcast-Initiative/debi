@@ -1,0 +1,40 @@
+[project]
+name = "debi"
+version = "2023.1.7"
+description = "Dynamic Eclipse Brodcast Initiative scripts and support"
+readme = {file = "README.md", content-type = "text/markdown"}
+requires-python = ">= 3.6"
+license = {file = "LICENSE"}
+authors = [
+    { name = "Matthew Penn", email = "mattpenn2015@github.com"},
+    { name = "Chris Mandrell", email = "cmandrell@github.com"},
+    { name = "Castor Fu", email = "castorf@github.com"},
+]
+
+dependencies = [
+    "astropy",
+    "opencv-python-headless",
+    "numpy",
+    "watchdog",
+]
+
+keywords = ["astronomy"]
+
+[project.scripts]
+hdsrnap = "debi.analysis:hdrsnap"
+
+
+[project.urls]
+"Homepage" = "https://debinitiative.org"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pylint.main]
+recursive = true
+
