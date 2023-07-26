@@ -1,6 +1,6 @@
 [project]
-name = "debi"
-version = "2023.1.7"
+name = "debi-astro"
+version = "2023.1.8"
 description = "Dynamic Eclipse Brodcast Initiative scripts and support"
 readme = {file = "README.md", content-type = "text/markdown"}
 requires-python = ">= 3.6"
@@ -14,6 +14,7 @@ authors = [
 dependencies = [
     "astropy",
     "opencv-python-headless",
+    "planetary-system-stacker",
     "numpy",
     "watchdog",
 ]
@@ -21,15 +22,15 @@ dependencies = [
 keywords = ["astronomy"]
 
 [project.scripts]
-hdsrnap = "debi.analysis:hdrsnap"
+hdrsnap = "debi.hdrsnap:main"
 
+>>>>>>> e78c028 (Initial pass at providing python packaging.)
 
 [project.urls]
 "Homepage" = "https://debinitiative.org"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
-
 
 [build-system]
 requires = ["setuptools>=61.0"]
